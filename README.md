@@ -126,9 +126,3 @@ https://drive.google.com/file/d/1n8XwbS2K56Y5uWWtSnC5kfPa-zmX8IZ3/view?usp=shari
 ## License
 
 This project is open-source and available under the MIT License.
-
----
-
-## Acknowledgments
-
-Developed as part of the Embedded C Programming course under Dr. John Sahaya Rani Alex, BECE320E.
