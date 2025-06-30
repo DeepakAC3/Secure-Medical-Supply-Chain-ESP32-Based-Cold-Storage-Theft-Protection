@@ -117,4 +117,4 @@ This project is open-source and available under the MIT License.
 
 ## Acknowledgments
 
-Developed as part of the Embedded C Programming course under Dr. John Sahaya Rani Alex, BECE320E[2].
+Developed as part of the Embedded C Programming course under Dr. John Sahaya Rani Alex, BECE320E.
