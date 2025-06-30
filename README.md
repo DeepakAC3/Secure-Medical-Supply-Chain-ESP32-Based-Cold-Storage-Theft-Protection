@@ -23,6 +23,7 @@ This project delivers a **cost-effective, portable, and IoT-enabled cold chain m
 - **Remote Cloud Dashboard**  
   All sensor data and device status are visualized in real-time through the Blynk mobile app, enabling remote monitoring and notifications.
 
+
 ---
 
 ## System Architecture
@@ -38,6 +39,12 @@ This project delivers a **cost-effective, portable, and IoT-enabled cold chain m
 | Buzzer            | Audible alerts for breaches or abnormal conditions   |
 | Blynk Cloud       | Real-time dashboard and mobile notifications         |
 
+
+
+## Schematic Diagram
+
+![image](https://github.com/user-attachments/assets/2dc7ff80-0ac4-4dc0-b1b6-17f9e9e16d67)
+
 ---
 
 ## How It Works
@@ -47,6 +54,12 @@ This project delivers a **cost-effective, portable, and IoT-enabled cold chain m
 3. **Access Control**: RFID scans control access; after valid entry, other sensors are disabled for 15 seconds to avoid false alarms.
 4. **Alert Logic**: Unauthorized access or abnormal readings trigger buzzer alarms and instant cloud notifications.
 5. **Remote Visualization**: All data and status updates are pushed to the Blynk app for real-time monitoring.
+
+
+
+## Dashboard Showcase
+
+![image](https://github.com/user-attachments/assets/f048287e-3028-4241-9ea8-b3535c4fd7c9)
 
 ---
 
@@ -90,6 +103,10 @@ This project delivers a **cost-effective, portable, and IoT-enabled cold chain m
 - Effective tamper detection and alerting
 - User-friendly real-time dashboard for remote oversight
 
+
+## Working Video
+
+https://drive.google.com/file/d/1n8XwbS2K56Y5uWWtSnC5kfPa-zmX8IZ3/view?usp=sharing
 ---
 
 ## Troubleshooting & Known Issues
