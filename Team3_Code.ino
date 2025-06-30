@@ -91,8 +91,8 @@ void handleRFID() {
     content.concat(String(mfrc522.uid.uidByte[i], HEX));
   }
   content.toUpperCase();
-
-  if (content == "9EBA2FAA") {
+// replace Auth_ID with the value read from your RFID tag
+  if (content == "Auth_ID") {
     Serial.println("🔐 RFID: Authorized");
     rfidAccessGranted = true;
     Blynk.virtualWrite(V2, "Authorized");
