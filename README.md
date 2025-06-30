@@ -1,2 +1,120 @@
-# Secure-Medical-Supply-Chain-ESP32-Based-Cold-Storage-Theft-Protection
- This project leverages the ESP32 microcontroller to integrate temperature, humidity, GPS, light, ultrasonic, and RFID sensors, providing real-time environmental monitoring, secure access control, live location tracking, and instant alerts via the Blynk cloud platform.
+# Secure Medical Supply Chain: ESP32-Based Cold Storage & Theft Protection
+
+## Overview
+
+This project delivers a **cost-effective, portable, and IoT-enabled cold chain monitoring system** designed for secure transportation of perishable goods and medical supplies. By integrating multiple sensors with an ESP32 microcontroller and Blynk cloud connectivity, the system enables **real-time monitoring, access control, and instant alerts** to ensure the safety and integrity of goods in transit.
+
+---
+
+## Features
+
+- **Real-Time Environmental Monitoring**  
+  Continuously tracks temperature and humidity using the DHT11 sensor to maintain optimal storage conditions.
+
+- **Live Location Tracking**  
+  Utilizes a GPS (NEO-6M) module to transmit live coordinates and timestamps to the Blynk cloud for end-to-end logistics visibility.
+
+- **Secure RFID Access Control**  
+  Employs the MFRC522 RFID module to restrict access to authorized personnel, with a 15-second sensor disable logic after valid entry.
+
+- **Tamper & Theft Detection**  
+  Light (LDR) and ultrasonic sensors detect unauthorized box openings and package presence, triggering buzzer alarms and cloud alerts.
+
+- **Remote Cloud Dashboard**  
+  All sensor data and device status are visualized in real-time through the Blynk mobile app, enabling remote monitoring and notifications.
+
+---
+
+## System Architecture
+
+| Component         | Functionality                                        |
+|-------------------|-----------------------------------------------------|
+| ESP32             | Central controller with Wi-Fi and BLE                |
+| DHT11             | Temperature & humidity monitoring                    |
+| NEO-6M GPS        | Live location tracking                               |
+| MFRC522 RFID      | Secure access control                                |
+| LDR Module        | Detects box opening/tampering                        |
+| HC-SR04 Ultrasonic| Object presence and box status                       |
+| Buzzer            | Audible alerts for breaches or abnormal conditions   |
+| Blynk Cloud       | Real-time dashboard and mobile notifications         |
+
+---
+
+## How It Works
+
+1. **Sensor Initialization**: ESP32 initializes all sensors and connects to the Blynk cloud.
+2. **Continuous Monitoring**: Reads temperature, humidity, light, ultrasonic, and GPS data at regular intervals.
+3. **Access Control**: RFID scans control access; after valid entry, other sensors are disabled for 15 seconds to avoid false alarms.
+4. **Alert Logic**: Unauthorized access or abnormal readings trigger buzzer alarms and instant cloud notifications.
+5. **Remote Visualization**: All data and status updates are pushed to the Blynk app for real-time monitoring.
+
+---
+
+## Getting Started
+
+### Hardware Requirements
+
+- ESP32 Development Board
+- DHT11 Temperature & Humidity Sensor
+- NEO-6M GPS Module
+- MFRC522 RFID Module + RFID Tags
+- LDR (Light Dependent Resistor) Module
+- HC-SR04 Ultrasonic Sensor
+- Buzzer
+- Breadboard, jumper wires, and power supply
+
+### Software Requirements
+
+- Arduino IDE (with ESP32 board support)
+- Blynk IoT Platform (mobile app and authentication token)
+- Required Arduino libraries:  
+  `WiFi.h`, `BlynkSimpleEsp32.h`, `DHT.h`, `SPI.h`, `MFRC522.h`, `TinyGPS++.h`
+
+---
+
+## Installation & Usage
+
+1. **Clone this repository** and open the main code file in Arduino IDE.
+2. **Configure your Wi-Fi credentials and Blynk authentication token** in the code.
+3. **Upload the code** to your ESP32 board.
+4. **Connect the sensors** as per the schematic.
+5. **Monitor and control** the system via the Blynk mobile app.
+
+---
+
+## Results
+
+- Stable and accurate environmental monitoring (±1°C, ±5% RH)
+- Reliable live GPS tracking with cloud updates
+- Fast and secure RFID-based access control
+- Effective tamper detection and alerting
+- User-friendly real-time dashboard for remote oversight
+
+---
+
+## Troubleshooting & Known Issues
+
+- **Sensor read failures**: Ensure stable power supply and correct wiring.
+- **RFID/GPS issues**: Use high-quality tags and place modules away from interference.
+- **Connectivity loss**: Implement local logging or reconnection logic for critical events.
+
+---
+
+## License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## Authors
+
+- Raghav Kishore V
+- Deepak Pradip
+- Vigneswar PR
+- Maheshwar S
+
+---
+
+## Acknowledgments
+
+Developed as part of the Embedded C Programming course under Dr. John Sahaya Rani Alex, BECE320E[2].
