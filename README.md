@@ -129,15 +129,6 @@ This project is open-source and available under the MIT License.
 
 ---
 
-## Authors
-
-- Raghav Kishore V
-- Deepak Pradip
-- Vigneswar PR
-- Maheshwar S
-
----
-
 ## Acknowledgments
 
 Developed as part of the Embedded C Programming course under Dr. John Sahaya Rani Alex, BECE320E.
