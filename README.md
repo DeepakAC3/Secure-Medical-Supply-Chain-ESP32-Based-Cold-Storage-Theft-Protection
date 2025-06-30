@@ -115,6 +115,12 @@ https://drive.google.com/file/d/1n8XwbS2K56Y5uWWtSnC5kfPa-zmX8IZ3/view?usp=shari
 - **RFID/GPS issues**: Use high-quality tags and place modules away from interference.
 - **Connectivity loss**: Implement local logging or reconnection logic for critical events.
 
+## Future Scope
+- **Orientation and Shock Detection with MPU6050**: Add an MPU6050 accelerometer to detect box orientation and shock events.
+
+- **SMS Alerts via SIM800L GSM Module**: Integrate a SIM800L GSM module for SMS alerts when Wi-Fi is unavailable.
+
+- **Data Logging to SD Card**: Enable onboard data logging to an SD card for offline record-keeping.
 ---
 
 ## License
