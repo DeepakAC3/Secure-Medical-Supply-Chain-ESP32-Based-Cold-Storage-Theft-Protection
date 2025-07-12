@@ -106,7 +106,7 @@ This project delivers a **cost-effective, portable, and IoT-enabled cold chain m
 
 ## Working Video
 
-https://drive.google.com/file/d/1n8XwbS2K56Y5uWWtSnC5kfPa-zmX8IZ3/view?usp=sharing
+https://youtu.be/VkGJgjt75Lw
 ---
 
 ## Troubleshooting & Known Issues
